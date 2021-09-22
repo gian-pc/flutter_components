@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_codigo3_components/pages/alert_page.dart';
 import 'package:flutter_codigo3_components/pages/avatar_page.dart';
+import 'package:flutter_codigo3_components/pages/card_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -45,7 +46,7 @@ class HomePage extends StatelessWidget {
                   title: "Cards",
                   subtitle: "Módulo de cards",
                   icon: Icons.picture_in_picture,
-                  toWidget: AlertPage(),
+                  toWidget: CardPage(),
                 )
               ],
             ),
