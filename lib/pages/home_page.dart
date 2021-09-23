@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_codigo3_components/pages/alert_page.dart';
 import 'package:flutter_codigo3_components/pages/avatar_page.dart';
 import 'package:flutter_codigo3_components/pages/card_page.dart';
+import 'package:flutter_codigo3_components/pages/input_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -47,6 +48,12 @@ class HomePage extends StatelessWidget {
                   subtitle: "Módulo de cards",
                   icon: Icons.picture_in_picture,
                   toWidget: CardPage(),
+                ),
+                ItemListWidget(
+                  title: "Inputs",
+                  subtitle: "Módulo de Inputs",
+                  icon: Icons.input,
+                  toWidget: InputPage(),
                 )
               ],
             ),
