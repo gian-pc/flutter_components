@@ -15,7 +15,8 @@ class _InputPageState extends State<InputPage> {
     "Superman",
     "Wonder Woman",
     "Flash",
-    "Aquaman"
+    "Aquaman",
+    "Spiderman"
   ];
 
   String auxiliar = "Batman";
@@ -50,17 +51,21 @@ class _InputPageState extends State<InputPage> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(12.0),
-
             ),
             child: DropdownButtonHideUnderline(
               child: DropdownButton(
                 value: auxiliar,
-                items: getItemsDropdown(),
-                onChanged: (String? value) {
-                  auxiliar=value!;
-                  setState(() {
+                //items: getItemsDropdown(),
+                items: superHeroes.map(
+                  (element) => DropdownMenuItem(
+                    child: Text(element),
+                    value: element,
+                  ),
+                ).toList(),
 
-                  });
+                onChanged: (String? value) {
+                  auxiliar = value!;
+                  setState(() {});
                 },
               ),
             ),

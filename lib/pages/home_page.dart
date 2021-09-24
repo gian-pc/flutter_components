@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_codigo3_components/pages/alert_page.dart';
+import 'package:flutter_codigo3_components/pages/animation_page.dart';
 import 'package:flutter_codigo3_components/pages/avatar_page.dart';
 import 'package:flutter_codigo3_components/pages/card_page.dart';
 import 'package:flutter_codigo3_components/pages/input_page.dart';
+import 'package:flutter_codigo3_components/pages/slider_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -54,7 +56,21 @@ class HomePage extends StatelessWidget {
                   subtitle: "Módulo de Inputs",
                   icon: Icons.input,
                   toWidget: InputPage(),
-                )
+                ),
+                ItemListWidget(
+                  title: "Sliders",
+                  subtitle: "Módulo de Sliders",
+                  icon: Icons.picture_as_pdf,
+                  toWidget: SliderPage(),
+                ),
+                ItemListWidget(
+                  title: "Animations",
+                  subtitle: "Módulo de Animaciones",
+                  icon: Icons.animation,
+                  toWidget: AnimationPage(),
+                ),
+
+
               ],
             ),
           ),
